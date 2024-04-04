@@ -1,0 +1,1407 @@
+@charset "UTF8";
+@font-face {
+    font-family: 'porshe';
+    src: url('fonts/911porscha.zip') 
+    format('opentype'), url('fonts/911porscha/911porschav3.ttf')
+    format('truetype');
+    font-weight:normal;
+    font-style: normal;
+
+}
+
+@font-face{
+    font-family: 'luis';
+    src: url('fonts/louis_george_cafe.zip')
+   format('opentype'), url('fonts/louis_george_cafe/Louis\ George\ Cafe.ttf')
+   format('truetype');
+   font-weight: normal;
+   font-style: normal;
+
+}
+
+@font-face {
+    font-family: "CCJoeMad Italic";
+    src: url("https://db.onlinewebfonts.com/t/201215b3b9bdab036469fd365a74d43b.eot");
+    src: url("https://db.onlinewebfonts.com/t/201215b3b9bdab036469fd365a74d43b.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/201215b3b9bdab036469fd365a74d43b.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/201215b3b9bdab036469fd365a74d43b.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/201215b3b9bdab036469fd365a74d43b.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/201215b3b9bdab036469fd365a74d43b.svg#CCJoeMad Italic")format("svg");
+}
+
+
+body,
+html{
+    margin: 0;
+    padding: 0;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content{
+    position: relative;
+    background-image: linear-gradient(180deg, rgba(29, 28, 28, 0.719) 10%,transparent );
+    padding: 20px;
+    z-index: 1;
+}
+
+nav{
+    margin-top: -35px;
+}
+
+.menu{
+
+    margin: 50px 0px 0px 50px;
+    font-size: 0.9rem;
+    font-weight: bold;    
+    z-index: 1;
+    
+
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 15px 5px 15px ;
+    border-radius: 15px;
+}
+
+.menu a:hover{
+    background-color: rgba(255, 255, 255, 0.233);
+}
+
+.title{
+    font-family: 'porshe' ,Arial, Helvetica, sans-serif;
+    margin-top: -50px;
+    margin-left: 50%;
+    transform: translate(-25%);
+    color: #ffffff;
+    cursor: pointer;
+    
+}
+
+.subtitle{
+    display: inline-block;
+    margin-top: 125px;
+    margin-left: 90px;
+}
+
+.subtitle h2{
+    font-family: 'luis' ,Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+    margin-bottom: 25px;
+    font-size: 5rem;
+    z-index: 1;
+    color: white;
+    font-weight: normal;
+    font-size: 100px;
+}
+
+.desc{
+    margin-left: 50px;
+    font-weight: bold;
+    
+}
+
+.desc a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    display: inline-block;
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+    
+
+}
+
+.desc a:hover{
+    background-color: rgba(255, 255, 255, 0.164);
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+    
+}
+video:nth-of-type(1){
+    position: fixed;
+    width: 100%;
+    width: 1360px;
+    height: 610px;
+    top: 0;
+    z-index: -100;
+    object-fit: cover;
+
+    
+}
+
+main{
+    background-color: white;
+    padding-bottom: 100px;
+    margin-top: 100px;
+    
+}
+
+section:nth-of-type(1){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-5%);
+}
+
+.options{
+    margin-left: 200px;
+    display: flex;
+
+}
+
+
+
+picture img{
+    width: 288px;
+    height: 216px;
+    margin-right: 50px;
+    margin-top: 100px;
+    border-radius: 5px;
+    transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
+picture p:nth-of-type(1){
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.options img:hover{
+
+    transform: scale(1.1);
+    
+}
+
+.options p:hover{
+    transform: scale(1.1);
+
+}
+
+.options .s1{
+
+    margin-left: 60px;
+    font-weight: bold;
+    font-size: 1.3rem;
+
+}
+.options .s2{
+
+    margin-left: 120px;
+    font-weight: bold;
+    font-size: 1.3rem;
+
+}
+.options .s3{
+
+    margin-left: 155px;
+    font-weight: bold;
+    font-size: 1.3rem;
+
+}
+
+.options p:hover{
+    
+    transition: none;
+    transform: none;
+    cursor: pointer;
+}
+
+.content-modelos h1{
+    margin-top: 150px;
+    text-align: center;
+    font-family: 'luis' ,Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+
+}
+
+
+
+article{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+/*cars geral*/
+
+.color {
+    background-image: linear-gradient( 360deg ,rgba(0, 0, 0, 0.699), transparent);
+    padding-bottom: 1px;
+    
+}
+
+/*cars 718*/
+
+.cars{
+    background-color: black;
+    background-image: url(img/718_Carrange.webp);
+    background-position:center center;
+    background-size: cover;
+    width: 446px;
+    height: 598px;
+    background-repeat: no-repeat;
+    margin-right: 40px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+
+}
+
+
+
+
+.cars:hover{
+
+    transform: scale(1.03);    
+    
+    
+}
+
+
+.cars a{
+    color: rgb(153, 56, 56);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 50px;
+    background-color: white;
+    
+}
+.cars a:nth-of-type(1){
+    color: rgb(12, 12, 12);
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.cars a:nth-of-type(2){
+    color: rgb(255, 255, 255);
+    margin-top: -20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(48, 47, 47, 0.527);
+    text-align: center;
+    border: 2px solid white;
+}
+.cars a:nth-of-type(1):hover{
+    transform: none;
+    transition: none;
+    background-color: #ffffff96;
+    
+}
+.cars a:nth-of-type(2):hover{
+    transform: none;
+    transition: none;
+    background-color: #000000b6;
+    
+}
+
+.cars p{
+    color: #ffffff;
+    width: 400px;
+    font-size: 1.5rem;
+    margin-top: 280px;
+    margin-left: 50px;
+    line-height: 30px;
+}
+
+
+p.p718{
+
+    font-family: "CCJoeMad Italic";
+    margin-top: 20px;
+
+}
+
+/*cars1 911*/
+
+.cars1{
+    background-color: black;
+    background-image: url(img/911_Carrange.webp);
+    background-position:center center;
+    background-size: cover;
+    width: 446px;
+    height: 598px;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: 1s;
+    overflow: hidden;
+
+   
+}
+.cars1:hover{
+
+    transform: scale(1.04);
+    
+}
+
+.cars1 a{
+
+    background-color: aquamarine;
+    margin-bottom: 50px;
+    display: block;
+    color: rgb(165, 42, 42);
+}
+
+.cars1 a:nth-of-type(1){
+    background-color: white;
+    margin-top: 0px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.cars1 a:nth-of-type(2){
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #2726268a;
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -20px;
+    border: 2px solid wheat ;
+}
+
+.cars1 a:nth-of-type(1):hover{
+    background-color:#ffffff96;
+}
+.cars1 a:nth-of-type(2):hover{
+    background-color: #000000b6;
+
+}
+
+.cars1 p{
+    color: white;
+    width: 400px;
+    font-size: 1.5rem;
+    margin-top: 290px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+p.p911{
+    margin-top: 20px;
+    font-weight: 1.5rem;
+    font-family: "CCJoeMad Italic";
+
+}
+
+
+
+
+
+/*cars 2 taycan*/
+.cars2{
+    background-color: black;
+    background-image: url(img/Taycan_Carrange.webp);
+    background-position:center center;
+    background-size: cover;
+    width: 446px;
+    height: 598px;
+    background-repeat: no-repeat;
+    margin-right: 40px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: 1s;
+    overflow: hidden;
+
+}
+.cars2:hover{
+
+    transform: scale(1.1);
+    
+}
+
+
+.cars2 a{
+    text-decoration: none;
+    color: white;
+    background-color: aqua;
+    display: block;
+    margin-top: 52px;
+}
+
+.cars2 a:nth-of-type(1){
+    padding: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cars2 a:nth-of-type(2){
+    padding: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    color: white;
+    background-color:#2726268a ;
+    border: 2px solid white;
+    margin-top:  20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cars2 a:nth-of-type(1):hover{
+    background-color:#ffffff96;
+}
+.cars2 a:nth-of-type(2):hover{
+    background-color: #000000b6;
+
+}
+
+
+.taycan
+{
+    margin-top: 20px;
+    margin-left: 40px;
+    font-family: "CCJoeMad Italic";
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+
+.cars2 p:nth-of-type(2) {
+    width: 380px;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 40px;
+    margin-top: 290px;
+}
+
+
+
+/*cars 3 panamera*/
+
+.cars3{
+    background-color: black;
+    background-image: url(img/Panamera_Carrange.webp);
+    background-position:center center;
+    background-size: cover;
+    width: 446px;
+    height: 598px;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: 1s;
+    overflow: hidden;
+
+
+}
+.cars3:hover{
+
+    transform: scale(1.1);
+    
+}
+
+.cars3 a{
+
+    text-decoration: none;
+    display: block;
+    color: white;
+    margin-top: 150px;
+    background-color: aqua;
+
+}
+
+
+.cars3 a:nth-of-type(1){
+    padding: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cars3 a:nth-of-type(2){
+    padding: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    color: white;
+    background-color:#2726268a ;
+    border: 2px solid white;
+    margin-top:  20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cars3 a:nth-of-type(1):hover{
+    background-color:#ffffff96;
+}
+.cars3 a:nth-of-type(2):hover{
+    background-color: #000000b6;
+
+}
+
+
+.panamera
+{
+    margin-top: 20px;
+    margin-left: 40px;
+    font-family: "CCJoeMad Italic";
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+
+.cars3 p:nth-of-type(2) {
+    width: 380px;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 40px;
+    margin-top: 320px;
+}
+
+/*cars4 macan*/
+
+.cars4{
+    background-color: black;
+    background-image: url(img/Macan_Carrange.webp);
+    background-position:center center;
+    background-size: cover;
+    width: 446px;
+    height: 598px;
+    background-repeat: no-repeat;
+    margin-right: 40px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: 1s;
+
+}
+.cars4:hover{
+
+    transform: scale(1.1);
+    
+}
+
+
+.cars4 a{
+
+    text-decoration: none;
+    display: block;
+    color: white;
+    margin-top: 150px;
+    background-color: aqua;
+
+}
+
+
+.cars4 a:nth-of-type(1){
+    padding: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cars4 a:nth-of-type(2){
+    padding: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    color: white;
+    background-color:#2726268a ;
+    border: 2px solid white;
+    margin-top:  20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cars4 a:nth-of-type(1):hover{
+    background-color:#ffffff96;
+}
+.cars4 a:nth-of-type(2):hover{
+    background-color: #000000b6;
+
+}
+
+
+.macan
+{
+    margin-top: 20px;
+    margin-left: 40px;
+    font-family: "CCJoeMad Italic";
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+
+.cars4 p:nth-of-type(2) {
+    width: 380px;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 40px;
+    margin-top: 320px;
+}
+
+/*cayenne*/
+
+.cars5{
+    background-color: black;
+    background-image: url(img/Cayenne_Carrange.webp);
+    background-position:center center;
+    background-size: cover;
+    width: 446px;
+    height: 598px;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: 1s;
+
+}
+
+
+.cars5:hover{
+
+    transform: scale(1.1);
+    
+}
+
+
+.cars5 a{
+
+    text-decoration: none;
+    display: block;
+    color: white;
+    margin-top: 150px;
+    background-color: aqua;
+
+}
+
+
+.cars5 a:nth-of-type(1){
+    padding: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cars5 a:nth-of-type(2){
+    padding: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    color: white;
+    background-color:#2726268a ;
+    border: 2px solid white;
+    margin-top:  20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cars5 a:nth-of-type(1):hover{
+    background-color:#ffffff96;
+}
+.cars5 a:nth-of-type(2):hover{
+    background-color: #000000b6;
+
+}
+
+
+.cayenne
+{
+    margin-top: 20px;
+    margin-left: 40px;
+    font-family: "CCJoeMad Italic";
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+
+.cars5 p:nth-of-type(2) {
+    width: 400px;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 40px;
+    margin-top: 320px;
+}
+
+section:nth-of-type(3){
+margin-top: 100px;
+display:inline;
+}
+
+.article1{
+    display: inline;
+}
+
+.cars-img{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    z-index: -100;
+    
+}
+.cars-img img{
+    height: 600px;
+    margin-top: 100px;
+}
+
+.cars-text {
+
+    width: 350px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    display: block;
+    margin-left: 200px;
+    margin-top: -500px;
+    z-index: 1;
+    overflow: hidden;
+   
+}
+
+.cars-text h2{
+    font-family: 'luis' ,Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    width: 400px;
+}
+
+.cars-text p {
+    font-family: 'luis' ,Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.cars-text form{
+    margin-top: 35px;
+}
+
+.cars-text input{
+
+    color: black;
+    border: 1px solid gray;
+    width: 150px;
+    font-family: 'luis' ,Arial, Helvetica, sans-serif;
+    padding: 15px;
+    padding-right: 150px;  
+    border-radius: 5px;
+}
+
+.cars-text ::placeholder{
+    width: 200px;
+    color: #000;
+}
+
+.midia-store{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.midia-store h2{
+    margin-top: 250px;
+    font-family: 'luis' ,Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+
+}
+
+.midia{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+iframe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    height: 500px;
+}
+
+
+
+.descubra {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.descubra h2{
+    font-family: 'luis' ,Arial, Helvetica, sans-serif;
+    margin-top: 200px;
+    font-size: 2.5rem;
+    margin-bottom: -50px;
+}
+
+.options1{
+    font-family: 'luis' ,Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-left: 110px;
+    transform: translate(-2.1%);
+
+}
+
+#equipment p {
+    font-family: 'luis' ,Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    width: 200px;
+    margin-top: -70px;
+    font-size: 1.2rem;
+}
+#equipment .s2{
+    position: relative;
+    margin-left: 220px;
+    color: rgb(255, 255, 255);
+    top: -20px;
+    
+    
+}
+
+.options1 .s1{
+    color: rgb(255, 255, 255);
+    margin-left: 100px;
+    margin-bottom: 10px;
+    
+}
+
+.options1 .s3{
+    color: rgb(255, 255, 255);
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.options1 img:hover{
+    transform: scale(1.2) ;
+}
+
+.options1 p{
+    cursor: pointer;
+}
+
+.content-color-footer{
+    background-color: #000;
+    padding-top: 50px;
+    padding-bottom: 00px;
+}
+
+.footer-content1{
+    color: white;
+    margin-left: 40px;
+}
+
+.footer-content1 a{
+    margin-left: 20px;
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-content1 p{
+    margin-top: -5px;
+}
+
+.footer-content1 a:hover{
+    color: red;
+}
+
+.content-contato{
+    color: white;
+    display: flex;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.contato{
+    margin-right: 100px;
+}
+
+.contato p{
+    margin-bottom: 50px;
+}
+
+.contato a{
+    color: black;
+    text-decoration: none;
+    
+}
+
+#formulario{
+    
+    width: 300px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#formulario:hover{
+    background-color: rgba(255, 255, 255, 0.61);
+}
+
+.redes a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    margin-right: 50px;
+    padding: 33px;
+    border-radius: 5px;
+}
+
+.redes a:hover{
+    background-color: rgba(255, 255, 255, 0.788);
+}
+
+.content-empresas{
+    color: white;
+    margin-left: 40px;
+}
+
+
+
+.empresas h2{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 35px;
+}
+.empresas p{
+    
+    display: inline-block;
+    margin-right:20px ;
+    margin-left: 25px;
+    cursor: pointer;
+    
+}
+
+.empresas p:hover{
+    color: red;
+}
+
+
+.final-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+    font-family: 'porshe' ,Arial, Helvetica, sans-serif;
+
+}
+
+@media (max-width:1301px) {
+
+    .empresas p{
+    
+        display: inline-block;
+        margin-right:1px ;
+        margin-left: 25px;
+        cursor: pointer;
+        
+    }
+    
+}
+
+@media (max-width:1260px) {
+
+    .redes a{
+        text-decoration: none;
+        background-color: white;
+        color: black;
+        display: inline-block;
+        margin-top: 18px;
+        margin-right: 50px;
+        padding: 25px;
+        border-radius: 5px;
+    }
+    
+}
+
+@media (max-width:1160px){
+
+    .redes a{
+        text-decoration: none;
+        background-color: white;
+        color: black;
+        display: inline-block;
+        margin-top: 18px;
+        margin-right: 50px;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .empresas p{
+        
+        font-size: .9rem ;
+        display: inline-block;
+        margin-right:1px ;
+        margin-left: 15px;
+        cursor: pointer;
+        
+    }
+
+    
+
+}
+
+@media (max-width:1120px){
+
+    
+section:nth-of-type(3){
+    margin-top: 100px;
+    display:inline;
+    }
+    
+.cars-text{
+    margin-left: 25px;
+}  
+    
+.options{
+    margin-left: 100px;
+    display: flex;
+
+}
+
+.options img{
+    width: 250px;
+    height: 200px;
+}
+
+.content-desc{
+    margin-left: -10px;
+}
+
+.content-desc img {
+    width: 250px;
+    height: 200px;
+}
+
+.redes a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    margin-top: 35px;
+    margin-right: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.empresas p{
+        
+    font-size: .9rem ;
+    display: inline-block;
+    margin-right:1px ;
+    margin-left: 5px;
+    cursor: pointer;
+
+    
+}
+
+.video video {
+    
+    width: 100%;
+    height: 100%;
+    
+}
+video:nth-of-type(1){
+    position: fixed;
+    width: 100%;
+    width: 1120px;
+    height: 610px;
+    top: 0;
+    z-index: -100;
+    object-fit: cover;
+
+    
+    }
+}
+
+@media (max-width:980px){
+
+
+    video:nth-of-type(1){
+        position: fixed;
+        width: 100%;
+        width: 980px;
+        height: 610px;
+        top: 0;
+        z-index: -100;
+        object-fit: cover;
+    
+        
+    }
+
+       
+.options{
+    margin-left: 320px;
+    display: inline-block;
+ 
+
+}
+
+.options img{
+    width: 400px;
+    height: 400px;
+}
+
+.options1{
+    display: inline-block;
+    margin-left: 320px;
+}
+
+.content-desc img {
+    width: 400px;
+    height: 400px;
+}
+
+.cars-text{
+    margin-top: -600px;
+    margin-left: 50%;
+    transform: translate(-50%);
+   
+}
+
+.article1 img{
+    margin-bottom:500px ;
+}
+
+
+}
+
+@media (max-width:905px){
+
+    video:nth-of-type(1){
+        position: fixed;
+        width: 100%;
+        width: 905px;
+        height: 610px;
+        top: 0;
+        z-index: -100;
+        object-fit: cover;
+    
+        
+    }
+
+
+    
+.empresas p{
+        
+    font-size: .9rem ;
+    display:inline-block;
+    margin-right:1px ;
+    margin-left: 60px;
+    cursor: pointer;
+    width: 200px;
+
+    
+}
+
+.redes a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    margin-top: 35px;
+    margin-right: 20px;
+    margin-left: -10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.redes{
+    margin-left: -40px;
+}
+
+
+}
+
+
+@media (max-width:850px){
+
+    video:nth-of-type(1){
+        position: fixed;
+        width: 100%;
+        width: 850px;
+        height: 610px;
+        top: 0;
+        z-index: -100;
+        object-fit: cover;
+    
+        
+    }
+
+
+    
+    .content-empresas{
+        display: inline-block;
+        margin-left: -25px;
+    }
+
+    .empresas h2 {
+        margin-left: -510px;
+    }
+
+    .redes{
+        margin-top: 300px;
+        margin-left: -400px;
+        margin-bottom: 100px;
+    }
+}
+
+
+@media (max-width:778px){
+
+    .options1{
+        display: inline-block;
+        margin-left: 200px;
+    }
+
+
+    .options{
+        display: inline-block;
+        margin-left: 200px;
+    }
+
+}
+
+@media (max-width:656px) {
+
+    .options1{
+        margin-left: 150px;
+        display: inline-block;
+        
+    }
+
+
+    .options{
+        display: inline-block;
+        margin-bottom: 50px;
+        margin-left: 150px;
+    }
+
+    
+
+    .options img{
+        width: 400px;
+        height: 400px;
+    }
+
+    .options img{
+        margin-bottom: -70px;
+    }
+
+    .options1 img{
+        width: 400px;
+        height: 400px;
+    }
+
+    .options1 img{
+        margin-bottom: -70px;
+    }
+
+    video:nth-of-type(1){
+        position: fixed;
+        width: 100%;
+        width: 750px;
+        height: 650px;
+        top: 0;
+        z-index: -100;
+        object-fit: cover;
+        
+    
+        
+    }
+
+    .cars-img img{
+        width: 400px;
+        height: 300px;
+        margin-left:180px;
+    }
+
+    .cars-text{
+        margin-top: -500px;
+        margin-left: 50%;
+        transform: translate(-50%);
+       
+    }
+
+    .empresas h2{
+        margin-left: -350px;
+    }
+
+    .subtitle h2{
+        margin-left: -50px;
+        font-size: 1.5rem;
+    }
+
+    
+}
+
+
+
+   
+
+
+
+
+
+
